@@ -1,0 +1,44 @@
+version: '3.9'
+services:
+  servidorweb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9090:80"
+    container_name: servidorWeb1
+    networks:
+      - redweb
+      - redmedia
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+    volumes:
+      - my_volume:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    container_name: db
+    networks:
+      - reddatos
+      - redmedia
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+   
+    ports:
+      - "8080:80"
+    networks:
+      - redmedia
+    depends_on:
+      - db
+networks:
+  redweb:
+  reddatos:
+  redmedia:
+volumes:
+  my_volume:
