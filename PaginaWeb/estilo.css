@@ -1,0 +1,96 @@
+/**{
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+
+}
+
+body{
+    background-color:cornsilk;
+}
+
+input{
+   background: silver;
+   border: 1px solid #393939;
+   border-radius: 5px 5px 5px 5px;
+   color: #393939;
+   font-size: 12px;
+   padding: 5px;
+}
+*/
+
+/* Definición de estilos para el encabezado */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+    }
+    
+    /* Definición de estilos para el formulario de registro */
+    .reg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: solid #0066cc;
+    border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+    background-color: #0051a8;
+    }
+    
+    /* Definición de estilos para la sección de búsqueda */
+    .cons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /* Definición de estilos para la sección de resultados */
+    .res {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /* Definición de estilos para la sección de lista completa */
+    .all {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    a {
+    color: #0066cc;
+    }
+    
+    a:hover {
+    color: #0051a8;
+    }
